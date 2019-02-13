@@ -91,7 +91,7 @@ export const pageQuery = graphql`
     markdownRemark(id: { eq: $id }) {
       id
       html
-      frontmatter {
+      path {
         date(formatString: "MMMM DD, YYYY")
         title
         description
